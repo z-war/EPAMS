@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.user_signup">
+    <ImageView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave" />
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:id="@+id/logoRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:src="@drawable/icon_login"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome"
+            android:text="Join Us !"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_below="@id/imageView"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/formRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/logoRL"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/nameLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/firstNameET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:inputType="text"
+                android:textSize="22sp"
+                android:hint="First Name"
+                android:nextFocusDown="@id/lastNameET"/>
+
+            <EditText
+                android:inputType="text"
+                android:nextFocusDown="@id/emailET"
+                android:layout_marginStart="5dp"
+                android:id="@+id/lastNameET"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/firstNameET"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:hint="Last Name" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:nextFocusDown="@id/passwordET"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameLL"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textSize="25sp"></EditText>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailET"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textSize="25sp"
+
+            android:nextFocusDown="@id/signupBTN"
+            ></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/signupBTN"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:layout_below="@id/passwordET"
+            android:background="@drawable/btn_background"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tologinactivity"
+            android:text=""
+            android:textSize="22sp"
+            android:layout_below="@id/signupBTN"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

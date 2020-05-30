@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="150dp"
+
+    android:background="@drawable/ic_header_back">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/line"
+       android:text="Admin Dashboard"
+       android:textColor="@color/colorAccent"
+       android:gravity="center"
+       android:textSize="30sp"
+       android:textStyle="italic"
+       android:layout_marginBottom="20dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1049571773557",
+    "firebase_url": "https://epams-5d694.firebaseio.com",
+    "project_id": "epams-5d694",
+    "storage_bucket": "epams-5d694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049571773557:android:c93864b2fef2e68915bc3c",
+        "android_client_info": {
+          "package_name": "com.example.epams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049571773557-f91jcf63g2uqnpqtjg66jldh7o856g6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.epams",
+            "certificate_hash": "a3a80d142d3ce9552ec6120678384f46d0728a85"
+          }
+        },
+        {
+          "client_id": "1049571773557-aid85d1ta4lq0fm0bhmqd4p2ske29c6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKdo9g-b7-5IvKLJyMJC7-l-E_g6gxRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049571773557-aid85d1ta4lq0fm0bhmqd4p2ske29c6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

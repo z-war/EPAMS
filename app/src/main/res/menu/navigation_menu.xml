@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/user_home"
+android:icon="@drawable/icon_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/user_bookings"
+        android:icon="@drawable/ic_show_icon"
+        android:title="Show Bookings"/>
+    <item
+        android:id="@+id/user_edit_profile"
+        android:title="Edit Profile"
+        android:icon="@drawable/ic_add_circle"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Sign Out" />
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/admin_login"
+        android:title="Admin"/>
+    <item
+        android:id="@+id/user_login"
+        android:title="User" />
+    <item
+        android:id="@+id/guest"
+        android:title="Guest" />
+</menu>
