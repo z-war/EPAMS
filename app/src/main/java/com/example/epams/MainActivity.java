@@ -34,18 +34,18 @@ public class MainActivity extends AppCompatActivity {
             user_login  = new UserLogin();
             guest_user = new Guest();
             change_fragment(admin_login);
-            if(getIntent().getExtras()!=null)
-            {
-
-                intent = getIntent();
-                String status = intent.getStringExtra("status");
-                if(status.equals("user_login"))
-                {
-                    bnv.setSelectedItemId(R.id.user_login);
-                    change_fragment(user_login);
-                }
-
-            }
+//            if(getIntent().getExtras()!=null)
+//            {
+//
+//                intent = getIntent();
+//                String status = intent.getStringExtra("status");
+//                if(status.equals("user_login"))
+//                {
+//                    bnv.setSelectedItemId(R.id.user_login);
+//                    change_fragment(user_login);
+//                }
+//
+//            }
             bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {

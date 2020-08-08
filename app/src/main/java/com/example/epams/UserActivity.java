@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.epams.Fragments.UserHome;
 import com.example.epams.Fragments.edit_profile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -40,7 +41,7 @@ public class UserActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private Toolbar toolbar;
     private ImageView profile_pic;
-    private Fragment editProfile;
+    private Fragment editProfile , userhome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,8 @@ public class UserActivity extends AppCompatActivity {
 
     private void init() {
         try {
+            userhome = new UserHome();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder , userhome).commit();
             editProfile = new edit_profile();
             navigationView = findViewById(R.id.design_navigation_view);
             drawerLayout = findViewById(R.id.drawer_layout);
@@ -79,7 +82,7 @@ public class UserActivity extends AppCompatActivity {
                     {
                         muath.signOut();
                         finish();
-                        startActivity(new Intent(getBaseContext(),MainActivity.class).putExtra("status","user_login"));
+                        startActivity(new Intent(getBaseContext(),MainActivity.class));
                     }
                     return false;
                 }

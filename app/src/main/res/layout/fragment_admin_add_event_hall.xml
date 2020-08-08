@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminAddEventHall">
+
+    <ScrollView
+        android:id="@+id/SV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Marquee"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/marqueNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Marquee Name"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/townNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marqueNameET"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Local Town"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/addressET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/townNameET"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Full Address"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/descET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressET"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/upload_imageTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descET"
+                android:gravity="center"
+                android:text="Select Image"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/IV"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/upload_imageTV"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_arrow_upward_black_24dp" />
+
+            <TextView
+                android:id="@+id/pricesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IV"
+                android:gravity="center"
+                android:text="Prices"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/pricesLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pricesTV"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/noontimeET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Noon Time"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/eveningtimeET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Evening Time"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/nighttimeET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Night Time"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/servicesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pricesLL"
+                android:gravity="center"
+                android:text="Services"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/servicesTV"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/seatingcapacityET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Seating Capcity"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <CheckBox
+                    android:id="@+id/lightsCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Lights"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/parking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Parking For Cars"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/seggretionCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Seggretion"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/stagedecCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Stage Decoration"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/wifiCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="WIFI"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/decoreCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Decoration"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/djCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="DJ"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/acCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Air Condition"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/cateringCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Catering"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/ladieswaitressCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Ladies Waitress"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL4"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/musicsystemCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Music System"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/speciallightsCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Special Lights"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/parkingforbikesCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Parking For Bikes"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LL5"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/socialmediapagesCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Social Media Pages"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/projectorCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Projector"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/electricityCB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Electricity"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addMarqueeBTN"
+                android:text="Submit"
+                android:layout_below="@id/LL6"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
